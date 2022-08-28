@@ -9,7 +9,7 @@ name: Three body problem simulation and training
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 metadata: {}
-startup_form: null
+startup_form: Create_Simulation
 native_deps: {head_html: ''}
 db_schema: {}
 renamed: true

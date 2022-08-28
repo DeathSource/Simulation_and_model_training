@@ -10,3 +10,6 @@ class Train_Model(Train_ModelTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+
+
