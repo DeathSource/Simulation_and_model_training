@@ -1,7 +1,8 @@
 unique_ids:
   forms:
-    Model_Training_Input: 2KWVGMTYUAGLWOLCCMYF4N3RVZFHN6T5
-    Simulation_Input: SOWC62JJAJ4G5HIZVDVNEUP7J6N7NHX5
+    Sidebar: XZTKFM6PEZCYWNFWI3ASG3Y6H4TKZPIF
+    Train_Model: F4JOGNQP7Z5UYBIGYRIUS6DJ63TOMNEU
+    Create_Simulation: CG4ZEIW63P7WQHVHTSKG4YYHY6DIYPRQ
   modules: {}
   server_modules: {}
   assets:
