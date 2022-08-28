@@ -3,16 +3,7 @@ components:
   properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
-  components:
-  - type: ColumnPanel
-    properties: {role: card, col_widths: '{}'}
-    name: card_1
-    layout_properties: {grid_position: 'BVRAJM,VVPTJS'}
-    components:
-    - type: Image
-      properties: {height: 483}
-      name: Main_img
-      layout_properties: {grid_position: 'ENUOJK,OZBWXE'}
+  components: []
 - type: Link
   properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
     visible: true, text: Create Simulation, font_size: null, wrap_on: mobile, font: '',
