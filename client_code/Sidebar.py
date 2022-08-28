@@ -7,12 +7,10 @@ class Sidebar(SidebarTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.create_simulation_lnk_click()
-    # Any code you write here will run before the form opens.
-  
     self.create_simulation_lnk.tag.form_to_open = Create_Simulation()
     self.train_model_lnk.tag.form_to_open = Train_Model()
-
+    
+    # Any code you write here will run before the form opens.
   def navigation_click(self, **event_args):
     form_to_open = event_args['sender'].tag.form_to_open
     self.content_panel.clear()
