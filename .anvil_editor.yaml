@@ -4,7 +4,8 @@ unique_ids:
     Sidebar: XZTKFM6PEZCYWNFWI3ASG3Y6H4TKZPIF
     Train_Model: F4JOGNQP7Z5UYBIGYRIUS6DJ63TOMNEU
   modules: {}
-  server_modules: {}
+  server_modules:
+    ServerModule1: QGGHBSIDBY4MRQ7XF7EOHECBLTO7WDI3
   assets:
     dashboard.html: A6ITFXTR7RFTWCZUC6S5OGDZGMVSNHOE
     single-column.html: 6XSJ7CZSON6TYZTWJKJ7OI3V2T4LGHCS
