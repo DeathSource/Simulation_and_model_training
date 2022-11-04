@@ -37,7 +37,7 @@ header>.nav-links>span {
 
 .ribbon {
   width: 100%;
-  height: 40vh;
+  /*height: 40vh;*/
   background-color: %color:Accent 1%;
 }
 
