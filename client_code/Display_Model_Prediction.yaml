@@ -1,0 +1,20 @@
+components:
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Prediction, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: train_model_lbl
+  layout_properties: {slot: title}
+- type: ColumnPanel
+  properties: {role: card, col_widths: '{}'}
+  name: display_model_prediction
+  layout_properties: {grid_position: 'OWQWOS,BVNXQL'}
+  components:
+  - type: Image
+    properties: {}
+    name: Prediction_gif
+    layout_properties: {grid_position: 'KJSRIO,TLKHWH'}
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:single-column.html'}

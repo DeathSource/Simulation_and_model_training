@@ -3,130 +3,6 @@ container:
   type: HtmlTemplate
   properties: {html: '@theme:single-column.html'}
 components:
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - type: ColumnPanel
-    properties: {role: card, col_widths: '{}'}
-    name: card_1
-    layout_properties: {grid_position: 'OWQWOS,BVNXQL'}
-    components:
-    - type: GridPanel
-      properties: {}
-      name: grid_panel_1
-      layout_properties: {grid_position: 'RAKPZS,KEDDRT'}
-      components:
-      - type: Label
-        properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
-          visible: true, text: 'Model :', font_size: 20, font: '', spacing_above: small,
-          icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-          underline: true, icon: ''}
-        name: label_1
-        layout_properties: {grid_position: 'VXGOUN,COYZQB', row: GMGIJF, width_xs: 4,
-          col_xs: 2, width: 183.906}
-      - type: DropDown
-        properties:
-          role: null
-          align: center
-          tooltip: ''
-          placeholder: ''
-          border: ''
-          enabled: true
-          foreground: ''
-          items: [<Select Model>, LSTM, GRU, CNN]
-          visible: true
-          font_size: null
-          font: ''
-          spacing_above: small
-          spacing_below: small
-          italic: false
-          background: ''
-          bold: true
-          underline: false
-          include_placeholder: false
-        name: model_dd
-        layout_properties: {grid_position: 'UXXLII,GEWAEW', row: GMGIJF, width_xs: 4,
-          col_xs: 6, width: 183.906}
-      - type: Label
-        properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
-          visible: true, text: 'Simulation Data :', font_size: 20, font: '', spacing_above: small,
-          icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-          underline: true, icon: ''}
-        name: label_2_copy
-        layout_properties: {row: CMSJCT, width_xs: 6, col_xs: 0, width: 290.868}
-      - type: FileLoader
-        properties:
-          role: null
-          show_state: true
-          align: center
-          tooltip: ''
-          border: ''
-          file_types: null
-          enabled: true
-          files: []
-          foreground: ''
-          visible: true
-          text: Select File
-          font_size: null
-          font: ''
-          spacing_above: small
-          icon_align: left
-          spacing_below: small
-          italic: false
-          file: null
-          background: ''
-          bold: false
-          underline: false
-          multiple: false
-          icon: fa:upload
-        name: file_loader_1
-        layout_properties: {row: CMSJCT, width_xs: 3, col_xs: 6, width: 130.434}
-        event_bindings: {}
-      - type: Label
-        properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-          visible: true, text: '- - -', font_size: 15, font: '', spacing_above: small,
-          icon_align: left, spacing_below: small, italic: true, background: '', bold: true,
-          underline: false, icon: ''}
-        name: simulation_name_lbl
-        layout_properties: {row: CMSJCT, width_xs: 2, col_xs: 9, width: 76.9444}
-      - type: Label
-        properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
-          visible: true, text: 'Training / Testing Size:', font_size: 20, font: '',
-          spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-          background: '', bold: true, underline: true, icon: ''}
-        name: label_2
-        layout_properties: {row: KEFUPY, width_xs: 6, col_xs: 0, width: 290.868}
-      - type: TextBox
-        properties: {role: null, align: center, hide_text: false, tooltip: Training Size,
-          placeholder: '85', border: '', enabled: true, foreground: '', visible: true,
-          text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-          italic: false, background: '', bold: false, underline: false}
-        name: train_size_tbox
-        layout_properties: {row: KEFUPY, width_xs: 2, col_xs: 6, width: 50.72218}
-      - type: TextBox
-        properties: {role: null, align: center, hide_text: false, tooltip: Testing Size,
-          placeholder: '15', border: '', enabled: true, foreground: '', visible: true,
-          text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-          italic: false, background: '', bold: false, underline: false}
-        name: test_size_tbox
-        layout_properties: {row: KEFUPY, width_xs: 2, col_xs: 8, width: 50.72218}
-      - type: Label
-        properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-          visible: true, text: (%), font_size: null, font: '', spacing_above: small,
-          icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-          underline: false, icon: ''}
-        name: label_3
-        layout_properties: {row: KEFUPY, width_xs: 1, col_xs: 10, width: 23.4722}
-    - type: Button
-      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-        foreground: '', visible: true, text: Start Training, font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
-      name: start_training_btn
-      layout_properties: {grid_position: 'RVITRC,SFQDXY'}
-      event_bindings: {}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: Train Model, font_size: null, font: '', spacing_above: small, icon_align: left,
@@ -134,3 +10,122 @@ components:
     icon: ''}
   name: train_model_lbl
   layout_properties: {slot: title}
+- type: ColumnPanel
+  properties: {role: card, col_widths: '{}'}
+  name: train_model_card
+  layout_properties: {grid_position: 'OWQWOS,BVNXQL'}
+  components:
+  - type: GridPanel
+    properties: {}
+    name: grid_panel_1
+    layout_properties: {grid_position: 'RAKPZS,KEDDRT'}
+    components:
+    - type: Label
+      properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Model :', font_size: 20, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: true, icon: ''}
+      name: label_1
+      layout_properties: {grid_position: 'VXGOUN,COYZQB', row: GMGIJF, width_xs: 4,
+        col_xs: 2, width: 183.906}
+    - type: DropDown
+      properties:
+        role: null
+        align: center
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [<Select Model>, LSTM, GRU, CNN]
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: true
+        underline: false
+        include_placeholder: false
+      name: model_dd
+      layout_properties: {grid_position: 'UXXLII,GEWAEW', row: GMGIJF, width_xs: 4,
+        col_xs: 6, width: 183.906}
+    - type: Label
+      properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Simulation Data :', font_size: 20, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: true, icon: ''}
+      name: label_2_copy
+      layout_properties: {row: CMSJCT, width_xs: 6, col_xs: 0, width: 290.868}
+    - type: FileLoader
+      properties:
+        role: null
+        show_state: true
+        align: center
+        tooltip: ''
+        border: ''
+        file_types: null
+        enabled: true
+        files: []
+        foreground: ''
+        visible: true
+        text: Select File
+        font_size: null
+        font: ''
+        spacing_above: small
+        icon_align: left
+        spacing_below: small
+        italic: false
+        file: null
+        background: ''
+        bold: false
+        underline: false
+        multiple: false
+        icon: fa:upload
+      name: file_loader_1
+      layout_properties: {row: CMSJCT, width_xs: 3, col_xs: 6, width: 130.434}
+      event_bindings: {}
+    - type: Label
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+        visible: true, text: '- - -', font_size: 15, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: true, background: '', bold: true,
+        underline: false, icon: ''}
+      name: simulation_name_lbl
+      layout_properties: {row: CMSJCT, width_xs: 2, col_xs: 9, width: 76.9444}
+    - type: Label
+      properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Training / Testing Size:', font_size: 20, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: true, underline: true, icon: ''}
+      name: label_2
+      layout_properties: {row: KEFUPY, width_xs: 6, col_xs: 0, width: 290.868}
+    - type: TextBox
+      properties: {role: null, align: center, hide_text: false, tooltip: Training Size,
+        placeholder: '85', border: '', enabled: true, foreground: '', visible: true,
+        text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: train_size_tbox
+      layout_properties: {row: KEFUPY, width_xs: 2, col_xs: 6, width: 50.72218}
+    - type: TextBox
+      properties: {role: null, align: center, hide_text: false, tooltip: Testing Size,
+        placeholder: '15', border: '', enabled: true, foreground: '', visible: true,
+        text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: test_size_tbox
+      layout_properties: {row: KEFUPY, width_xs: 2, col_xs: 8, width: 50.72218}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: (%), font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_3
+      layout_properties: {row: KEFUPY, width_xs: 1, col_xs: 10, width: 23.4722}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Start Training, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: start_training_btn
+    layout_properties: {grid_position: 'RVITRC,SFQDXY'}
+    event_bindings: {}

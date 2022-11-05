@@ -5,7 +5,9 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from .Create_Simulation import Create_Simulation
+from .Display_Simulation import Display_Simulation
 from .Train_Model import Train_Model
+from .Display_Model_Prediction import Display_Model_Prediction
 
 class Sidebar(SidebarTemplate):
   def __init__(self, **properties):
@@ -21,6 +23,7 @@ class Sidebar(SidebarTemplate):
     self.content_panel.clear()
     self.content_panel.add_component(form_to_open)
     pass
+
 
 
 

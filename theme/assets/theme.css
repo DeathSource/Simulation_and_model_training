@@ -20,7 +20,7 @@ header {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background: %color:Header Background%;
 }
 
