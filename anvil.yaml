@@ -11,5 +11,13 @@ runtime_options: {version: 2, client_version: '3', server_version: python3-sandb
 metadata: {}
 startup_form: Create_Simulation
 native_deps: {head_html: ''}
-db_schema: {}
+db_schema:
+  table_0:
+    title: Table 0
+    client: none
+    server: full
+    columns:
+    - name: Column0
+      admin_ui: {width: 200}
+      type: string
 renamed: true
