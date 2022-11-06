@@ -14,7 +14,9 @@ class Sidebar(SidebarTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.create_simulation_lnk.tag.form_to_open = Create_Simulation()
+    self.display_simulation_lnk.tag.form_to_open = Display_Simulation()
     self.train_model_lnk.tag.form_to_open = Train_Model()
+    self.display_prediction_lnk.tag.form_to_open = Display_Model_Prediction()
     self.content_panel.add_component(Create_Simulation())
     
     # Any code you write here will run before the form opens.
@@ -22,7 +24,7 @@ class Sidebar(SidebarTemplate):
     form_to_open = event_args['sender'].tag.form_to_open
     self.content_panel.clear()
     self.content_panel.add_component(form_to_open)
-    pass
+    # pass
 
 
 

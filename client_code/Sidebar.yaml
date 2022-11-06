@@ -23,10 +23,10 @@ components:
   layout_properties: {slot: title}
 - type: Link
   properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
-    visible: false, text: Display Simulation, font_size: null, wrap_on: never, font: '',
+    visible: true, text: Display Simulation, font_size: null, wrap_on: never, font: '',
     col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
     italic: false, background: '', bold: false, underline: false, icon: ''}
-  name: create_simulation_lnk_copy
+  name: display_simulation_lnk
   layout_properties: {slot: sidebar}
   event_bindings: {click: navigation_click}
 - type: Image
@@ -38,15 +38,15 @@ components:
     visible: true, text: Train Model, font_size: null, wrap_on: never, font: '', col_spacing: medium,
     spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
     italic: false, background: '', bold: false, underline: false, icon: ''}
-  name: train_model_lnk_copy
+  name: train_model_lnk
   layout_properties: {slot: sidebar}
   event_bindings: {click: navigation_click}
 - type: Link
   properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
-    visible: false, text: Display Prediction, font_size: null, wrap_on: never, font: '',
+    visible: true, text: Display Prediction, font_size: null, wrap_on: never, font: '',
     col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
     italic: false, background: '', bold: false, underline: false, icon: ''}
-  name: train_model_lnk
+  name: display_prediction_lnk
   layout_properties: {slot: sidebar}
   event_bindings: {click: navigation_click}
 - type: Link
@@ -54,7 +54,7 @@ components:
     visible: false, text: Display Side By Side, font_size: null, wrap_on: never, font: '',
     col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
     italic: false, background: '', bold: false, underline: false, icon: ''}
-  name: display_simulation_prediction
+  name: display_side_by_side_lnk
   layout_properties: {slot: sidebar}
 container:
   type: HtmlTemplate
