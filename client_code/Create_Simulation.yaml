@@ -73,7 +73,7 @@ components:
         spacing_above: none, spacing_below: none, italic: false, background: yellow,
         bold: false, underline: false}
       name: row1_drp
-      layout_properties: {}
+      layout_properties: {grid_position: 'QVSHWZ,RAKWRP'}
       components:
       - type: Label
         properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
