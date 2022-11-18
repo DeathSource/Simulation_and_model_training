@@ -3,7 +3,7 @@ services:
   client_config: {}
   server_config: {}
 startup: {type: form, module: Sidebar}
-package_name: Simulation_and_model_training
+package_name: Simulation_and_model_training_DEV
 allow_embedding: true
 name: Simulation_and_model_training
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
