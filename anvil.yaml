@@ -3,9 +3,9 @@ services:
   client_config: {}
   server_config: {}
 startup: {type: form, module: Sidebar}
-package_name: Three_body_problem_simulation_and_training
+package_name: Simulation_and_model_training
 allow_embedding: true
-name: Three body problem simulation and training
+name: Simulation_and_model_training
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 metadata: {}
